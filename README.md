@@ -54,8 +54,23 @@ See `docs/DATA_SOURCES.md` for verification details.
 
 ## Status
 
-Phase 0 — scaffold + public data verification (ESCO ✅, Coursera ✅).
-Next: ESCO + Coursera graph builder → first "skill → courses" query.
+**Working end-to-end (v0.1).** `esco_harvest.py` builds the ESCO backbone
+(occupation → essential/optional skills); `coursera_harvest.py` loads the public
+course catalog; `recommend.py` returns a learning path for a target occupation:
+
+```
+$ python3 scripts/recommend.py "data scientist"
+🎯 Target occupation: data scientist
+📚 Recommended learning path (skill → course that teaches it):
+   2. [design database scheme] → Database Design and Basic SQL in PostgreSQL (U. Michigan)
+  12. [data mining]            → Data Mining Pipeline (CU Boulder)
+   5. [build recommender systems] → Building Recommender Systems with ML and AI
+   ...
+```
+
+v0.1 uses a transparent keyword-matching baseline. **Next:** embedding/LLM
+skill→course matching (quality upgrade), Neo4j loader + web UI, Open Badges
+credential layer.
 
 ## License
 
