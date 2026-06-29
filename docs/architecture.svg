@@ -30,7 +30,8 @@
     <g>
       <rect x="248" y="135" width="180" height="64" rx="10" fill="#1e293b"/>
       <text x="338" y="162" text-anchor="middle" class="wt node">Normalize</text>
-      <text x="338" y="184" text-anchor="middle" fill="#cbd5e1" font-size="12">→ canonical Skill vocab</text>
+      <text x="338" y="180" text-anchor="middle" fill="#cbd5e1" font-size="12">surface → canonical skill</text>
+      <text x="338" y="195" text-anchor="middle" fill="#7dd3fc" font-size="10">(taxonomy pluggable: ESCO/O*NET/…)</text>
     </g>
     <g>
       <rect x="456" y="135" width="180" height="64" rx="10" fill="#0ea5e9"/>
@@ -74,7 +75,7 @@
   <!-- center Skill -->
   <circle cx="550" cy="450" r="64" fill="#0ea5e9"/>
   <text x="550" y="445" text-anchor="middle" class="wt" font-size="22" font-weight="800">Skill</text>
-  <text x="550" y="468" text-anchor="middle" fill="#e0f2fe" font-size="12">canonical / ESCO</text>
+  <text x="550" y="468" text-anchor="middle" fill="#e0f2fe" font-size="12">canonical (normalized)</text>
 
   <!-- Course -->
   <rect x="120" y="312" width="160" height="64" rx="10" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
@@ -107,5 +108,5 @@
   <text x="720" y="684" fill="#047857" font-size="12" font-style="italic">The graph path IS the explanation.</text>
 
   <!-- footer principles -->
-  <text x="40" y="726" class="sub" font-size="13">① Skill = universal join key   ② Normalization is the moat   ③ Graph path = explainable reason   ④ LLM tags &amp; explains — the graph decides (no hallucinated recs)</text>
+  <text x="40" y="726" class="sub" font-size="13">① Skill = universal join key   ② Skill normalization is the moat — the taxonomy itself is a commodity   ③ Graph path = explainable reason   ④ LLM tags &amp; explains — the graph decides</text>
 </svg>
